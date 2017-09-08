@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:background="#FFA726"
+    tools:context="com.example.singhsters.ordernow.SignUp">
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@drawable/rounded2"
+        android:hint="Full name"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="149dp"
+        android:layout_marginTop="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/Mob_no"
+        android:layout_alignStart="@+id/Mob_no"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        />
+
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/background_light"
+        android:hint="Email"
+        android:layout_marginTop="1px"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="249dp"
+        android:layout_below="@+id/Name"
+        android:layout_alignLeft="@+id/Mob_no"
+        android:layout_alignStart="@+id/Mob_no" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1px"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="199dp"
+        android:layout_below="@+id/Mob_no"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_buttom"/>
+
+    <EditText
+        android:id="@+id/Mob_no"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1px"
+        android:background="@android:color/background_light"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="99dp"
+        android:layout_below="@+id/Email"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rounded_code"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:fontFamily="casual"
+        android:text="Done"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rounded_code"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:fontFamily="casual"
+        android:text="CLEAR"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
